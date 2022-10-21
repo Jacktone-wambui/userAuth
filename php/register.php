@@ -17,7 +17,7 @@ function registerUser($username, $email, $password){
     $f = fopen('../storage/users.csv', 'a');
     
         if(fputcsv($f, $details)){
-            echo '<script type="text/javascript"> alert(" You have successfully registered!") </script>';
+            echo '<script type="text/javascript"> alert(" User successfully registered!") </script>';
         }
 
         else {
